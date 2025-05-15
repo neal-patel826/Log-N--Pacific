@@ -1,0 +1,28 @@
+<#
+.SYNOPSIS
+    # Eaplain what it does.
+
+.NOTES
+    Author          : Neal Patel
+    LinkedIn        : linkedin.com/in/neal-patel826/
+    GitHub          : github.com/neal-patel826
+    Date Created    : 2025-05-14
+    Last Modified   : 2025-05-14
+    Version         : 1.0
+    CVEs            : N/A
+    Plugin IDs      : N/A
+    STIG-ID         : N/A
+
+.TESTED ON
+    Date(s) Tested  : 
+    Tested By       : 
+    Systems Tested  : 
+    PowerShell Ver. : 
+
+.USAGE
+    Put any usage instructions here.
+    Example syntax:
+    PS C:\> .#remediation_template.ps1 
+#>
+
+# YOUR CODE GOES HERE
