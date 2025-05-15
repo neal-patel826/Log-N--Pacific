@@ -38,7 +38,8 @@ DeviceFileEvents
 | order by Timestamp desc  
 | project Timestamp, DeviceName, ActionType, FileName, FolderPath, SHA256, Account = InitiatingProcessAccountName
 ```
-![image](https://github.com/user-attachments/assets/96cc7c9d-b95d-481a-a543-01a55d877d08)
+![image](https://github.com/user-attachments/assets/4d18fcbb-97bb-4f95-a58e-16b9535530c4)
+
 
 
 ---
@@ -53,10 +54,11 @@ Searched for any `ProcessCommandLine` that contained the string "tor-browser-win
 
 DeviceProcessEvents  
 | where DeviceName == "neal-threats-md"  
-| where ProcessCommandLine contains "tor-browser-windows-x86_64-portable-14.0.1.exe"  
+| where ProcessCommandLine contains "tor-browser-windows-x86_64-portable-14.5.1.exe"  
 | project Timestamp, DeviceName, AccountName, ActionType, FileName, FolderPath, SHA256, ProcessCommandLine
 ```
-![image](https://github.com/user-attachments/assets/24ad0f51-a270-49a9-97a5-50421a83ed59)
+![image](https://github.com/user-attachments/assets/ed5691cd-caa0-4048-9aac-7c35e307a7b4)
+
 
 
 ---
@@ -73,8 +75,9 @@ DeviceProcessEvents
 | where FileName has_any ("tor.exe", "firefox.exe", "tor-browser.exe")  
 | project Timestamp, DeviceName, AccountName, ActionType, FileName, FolderPath, SHA256, ProcessCommandLine  
 | order by Timestamp desc
-```
-![image](https://github.com/user-attachments/assets/86010b77-beff-41c3-8440-e1843d9c3eea)
+
+![image](https://github.com/user-attachments/assets/bf6d83ad-b885-4f15-b690-b2ddc04cd62f)
+
 
 
 ---
@@ -94,7 +97,8 @@ DeviceNetworkEvents
 | project Timestamp, DeviceName, InitiatingProcessAccountName, ActionType, RemoteIP, RemotePort, RemoteUrl, InitiatingProcessFileName, InitiatingProcessFolderPath  
 | order by Timestamp desc
 ```
-![image](https://github.com/user-attachments/assets/31ac909d-abcc-4df5-ad20-79941fa37d7e)
+![image](https://github.com/user-attachments/assets/0afaf7e5-7a19-445e-baba-72f4d86bbe3d)
+
 
 
 ---
